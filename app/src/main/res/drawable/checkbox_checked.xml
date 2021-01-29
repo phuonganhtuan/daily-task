@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/checkBg"
+        android:width="24dp"
+        android:height="24dp">
+        <scale
+            android:drawable="@drawable/bg_checked_false"
+            android:level="1" />
+    </item>
+    <item
+        android:id="@+id/checkedDrawable"
+        android:width="20dp"
+        android:height="20dp"
+        android:gravity="center">
+        <scale
+            android:drawable="@drawable/ic_baseline_done_24"
+            android:level="5" />
+    </item>
+</layer-list>

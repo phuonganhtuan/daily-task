@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layoutWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_widget"
+        android:elevation="12dp"
+        android:gravity="top"
+        android:padding="@dimen/widget_margin"
+        android:theme="@style/ThemeOverlay.ThisProjectIsForRelaxTime.AppWidgetContainer">
+
+        <TextView
+            android:id="@+id/textTitleWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/today_tasks_widget"
+            android:textColor="@color/grey_400" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:contentDescription="@null" />
+
+        <ListView
+            android:id="@+id/listTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTitleWidget"
+            android:layout_margin="16dp"
+            tools:listitem="@layout/item_task_widget" />
+
+        <TextView
+            android:id="@+id/textEmptyWidget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTitleWidget"
+            android:layout_centerInParent="true"
+            android:layout_margin="32dp"
+            android:gravity="center"
+            android:textColor="@color/grey_400"
+            android:text="@string/no_task"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

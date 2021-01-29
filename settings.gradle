@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "This project is for relax time"

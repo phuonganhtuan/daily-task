@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Daily Task</string>
+    <string name="title_add_task">+ New Task</string>
+    <string name="task_title_must_not_be_empty">Task title must not be empty</string>
+    <string name="update">Update</string>
+    <string name="today_tasks">Today Progress (%s/%s)</string>
+    <string name="all_tasks">All tasks</string>
+    <string name="daily_tasks">Daily Tasks</string>
+    <string name="no_task">No task.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="today_tasks_widget">Today Tasks</string>
+    <string name="no_description">No description</string>
+    <string name="statistic">Statistic</string>
+</resources>
